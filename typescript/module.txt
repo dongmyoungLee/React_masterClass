@@ -1,0 +1,7 @@
+모듈
+
+npm i styled-components
+
+익스텐션
+
+vscode-styled-components
