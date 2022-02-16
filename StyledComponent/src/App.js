@@ -35,6 +35,10 @@ const rotationAnimation = keyframes`
   }
 `
 
+const Emoji = styled.span`
+  font-size: 36px;
+`
+
 const Box = styled.div`
   height: 200px;
   width: 200px;
@@ -43,32 +47,47 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${rotationAnimation} 3s linear infinite;
-  span {
-    font-size: 36px;
-    &:hover {
-      font-size: 50px;
-    }
+  ${Emoji}:hover {
+      font-size: 98px;
   }
 `
 
+const Title = styled.h1`
+  color: tomato;
+`
+
+const Wrapper1 = styled.div`
+  display: flex;
+  height: 100vh;
+  width: 100vh;
+  justify-content: center;
+  align-items: center;
+`
+
 function App() {
+  // return (
+  //   <Wrapper>
+  //     <Box>
+  //       <Emoji as="span">★</Emoji>
+  //     </Box>
+  //     <Emoji as="span">☆</Emoji>
+  //   </Wrapper>
+
+    
+    
+  //   <Father as="header">
+  //     <Box bgColor="teal" />
+  //     <Circle bgColor="tomato"/>
+  //     <Input/>
+  //     <Input/>
+  //     <Input/>
+  //     <Input/>
+  //     <Input/>
+  //   </Father>
+  // )
+
   return (
-    <Wrapper>
-      <Box>
-        <span>★</span>
-      </Box>
-    </Wrapper>
     
-    
-    // <Father as="header">
-    //   <Box bgColor="teal" />
-    //   <Circle bgColor="tomato"/>
-    //   <Input/>
-    //   <Input/>
-    //   <Input/>
-    //   <Input/>
-    //   <Input/>
-    // </Father>
   )
 }
 
